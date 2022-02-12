@@ -41,16 +41,13 @@ public class Menu_principal extends javax.swing.JFrame {
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("operação");
-        jLabel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel4.setMaximumSize(new java.awt.Dimension(100, 20));
         jLabel4.setMinimumSize(new java.awt.Dimension(100, 20));
         jLabel4.setPreferredSize(new java.awt.Dimension(100, 20));
 
-        operacao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "cadastrar cliente", "cadastrar usuário", "cadastrar dvd", "selecionar cliente" }));
-        operacao.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        operacao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "cadastrar cliente", "cadastrar usuário", "cadastrar dvd", "selecionar cliente", "selecionar dvd" }));
 
         realizar.setText("realizar");
-        realizar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         realizar.setMaximumSize(new java.awt.Dimension(60, 21));
         realizar.setMinimumSize(new java.awt.Dimension(60, 21));
         realizar.setPreferredSize(new java.awt.Dimension(60, 21));
@@ -61,7 +58,6 @@ public class Menu_principal extends javax.swing.JFrame {
         });
 
         sair.setText("sair");
-        sair.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         sair.setMaximumSize(new java.awt.Dimension(60, 21));
         sair.setMinimumSize(new java.awt.Dimension(60, 21));
         sair.setPreferredSize(new java.awt.Dimension(60, 21));
@@ -75,7 +71,6 @@ public class Menu_principal extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("LOCADORA");
-        jLabel6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel6.setMaximumSize(new java.awt.Dimension(240, 22));
         jLabel6.setMinimumSize(new java.awt.Dimension(240, 22));
         jLabel6.setPreferredSize(new java.awt.Dimension(240, 22));
@@ -136,6 +131,10 @@ public class Menu_principal extends javax.swing.JFrame {
             case "selecionar cliente":
                 Selecionar_cliente cliente_selecionado = new Selecionar_cliente();
                 cliente_selecionado.setVisible(true);
+                break;
+            case "selecionar dvd":
+                Selecionar_dvd dvd_selecionado = new Selecionar_dvd();
+                dvd_selecionado.setVisible(true);
                 break;
         }
     }//GEN-LAST:event_realizarActionPerformed
